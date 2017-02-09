@@ -1,0 +1,26 @@
+<tmpl_loop name=passwd>
+   <div>
+	
+    <fieldset>
+       <h1><legend><tmpl_var name="usuario"></legend></h1>
+                <form method=post action=#>
+		<table>
+                	<tr>
+			<td><input type="hidden" name="usuario" value="<tmpl_var name=usuario>" /</td>
+       			<td>pass:<td>
+			<td><input type="text" name="password" value="<tmpl_var name=password>" placeholder="password"></td>
+                	<td>uid:</td>
+                	<td><input type="text" name="uid" value="<tmpl_var name=uid>" placeholder="uid"></td>
+                	<td>gid:</td>
+                	<td><input type="text" name="gid" value="<tmpl_var name=gid>" placeholder="gid"></td>
+                	<td>gecos:</td>
+                	<td><input type="text" name="gecos" value="<tmpl_var name=gecos>" placeholder="gecos"></td>
+                	<td>home:</td>
+                	<td><input type="text" name="home" value="<tmpl_var name=home>" placeholder="home"></td>
+                	<td>shell:</td>
+                	<td><input type="text" name="shell" value="<tmpl_var name=shell>" placeholder="shell"></td>			</tr>
+		</table>
+          	</form>
+    </fieldset>
+    </div>
+</tmpl_loop>
